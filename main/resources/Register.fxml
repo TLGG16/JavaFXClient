@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="304.0" prefWidth="314.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Registration">
+    <children>
+        <Label layoutX="83.0" layoutY="92.0" text="Login:" />
+        <Label layoutX="83.0" layoutY="157.0" text="Password:" />
+        <PasswordField fx:id="passwordFieldPassword" layoutX="83.0" layoutY="171.0" />
+        <TextField fx:id="textFieldLogin" layoutX="83.0" layoutY="109.0" />
+        <Button id="R" fx:id="buttonRegister" layoutX="84.0" layoutY="217.0" mnemonicParsing="false" onAction="#Register_Pressed" prefHeight="25.0" prefWidth="149.0" text="Register" />
+      <Label alignment="CENTER" layoutX="83.0" layoutY="57.0" prefHeight="17.0" prefWidth="149.0" text="Регистрация" textAlignment="CENTER" />
+      <Button fx:id="buttonGotoLogin" layoutX="84.0" layoutY="256.0" mnemonicParsing="false" onAction="#GotoLogin_Pressed" prefHeight="25.0" prefWidth="149.0" text="Go to login" />
+    </children>
+</AnchorPane>

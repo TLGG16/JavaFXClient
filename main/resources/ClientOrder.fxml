@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="Pane" prefHeight="600.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Client.Order.OrderCreate">
+   <children>
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+      <TableView fx:id="infTable" layoutX="334.0" layoutY="14.0" prefHeight="456.0" prefWidth="852.0">
+         <columns>
+            <TableColumn fx:id="IDCollumn" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="NameCollumn" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="CategoryCollumn" prefWidth="184.0" text="Category" />
+            <TableColumn fx:id="DescriptionCollumn" prefWidth="191.0" text="Description" />
+            <TableColumn fx:id="PriceCollumn" prefWidth="121.0" text="Price" />
+            <TableColumn fx:id="AmountCollumn" prefWidth="118.0" text="Amount" />
+         </columns>
+      </TableView>
+      <TextField fx:id="IDField" layoutX="47.0" layoutY="69.0" />
+      <Button fx:id="AddProductbtn" layoutX="47.0" layoutY="129.0" mnemonicParsing="false" onAction="#AddProduct_Pressed" prefHeight="48.0" prefWidth="117.0" text="Добавить товар" textAlignment="CENTER" />
+      <Button fx:id="MakeOrderbtn" layoutX="14.0" layoutY="470.0" mnemonicParsing="false" onAction="#MakeOrder_Pressed" prefHeight="48.0" prefWidth="117.0" text="Оформить заказ" textAlignment="CENTER" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="241.0" text="Введите ID товара для добавления в список заказа" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="UserTable" layoutX="14.0" layoutY="242.0" prefHeight="200.0" prefWidth="312.0">
+        <columns>
+            <TableColumn fx:id="IDCollumnUser" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="NameCollumnUser" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="PriceCollumnUser" prefWidth="121.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="200.0" prefHeight="42.0" prefWidth="241.0" text="Ваш заказ" wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

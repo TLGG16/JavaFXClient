@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Suppliers.Menu">
+   <children>
+      <Label layoutX="240.0" layoutY="34.0" text="Меню для работы с поставщиками">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="CreateSupplierbtn" layoutX="309.0" layoutY="100.0" mnemonicParsing="false" onAction="#CreateSupplier_Pressed" prefHeight="60.0" prefWidth="150.0" text="Добавить&#10;поставщика" textAlignment="CENTER" />
+      <Button fx:id="ShowSuppliersbtn" layoutX="309.0" layoutY="180.0" mnemonicParsing="false" onAction="#ShowSuppliers_Pressed" prefHeight="60.0" prefWidth="150.0" text="Просмотреть&#10;поставщиков" textAlignment="CENTER" />
+      <Button fx:id="DeleteSupplierbtn" layoutX="310.0" layoutY="339.0" mnemonicParsing="false" onAction="#DeletSupplier_Pressed" prefHeight="60.0" prefWidth="150.0" text="Удалить поставщика" textAlignment="CENTER" />
+      <Button fx:id="UpdateSupplierbtn" layoutX="310.0" layoutY="259.0" mnemonicParsing="false" onAction="#UpdateSupplier_Pressed" prefHeight="60.0" prefWidth="150.0" text="Изменить поставщика" textAlignment="CENTER" />
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

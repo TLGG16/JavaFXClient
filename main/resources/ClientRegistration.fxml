@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Client.Register">
+   <children>
+      <Label layoutX="335.0" layoutY="53.0" text="Регистрация">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameField" layoutX="82.0" layoutY="105.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="82.0" layoutY="88.0" text="Имя" />
+      <Label layoutX="82.0" layoutY="144.0" text="Логин" />
+      <Button fx:id="Regbtn" layoutX="337.0" layoutY="335.0" mnemonicParsing="false" onAction="#Reg_Pressed" text="Регистрация">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="534.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="52.0" prefWidth="107.0" text="Назад" textAlignment="CENTER" />
+      <PasswordField fx:id="PasswordField" layoutX="420.0" layoutY="161.0" prefHeight="25.0" prefWidth="306.0" />
+      <TextField fx:id="SurnameField" layoutX="420.0" layoutY="105.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="420.0" layoutY="88.0" text="Фамилия" />
+      <Label layoutX="420.0" layoutY="144.0" text="Пароль" />
+      <TextField fx:id="NumberField" layoutX="82.0" layoutY="213.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="82.0" layoutY="196.0" text="Номер телефона" />
+      <Label layoutX="226.0" layoutY="248.0" text="Адрес" />
+      <TextField fx:id="EmailField" layoutX="420.0" layoutY="213.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="420.0" layoutY="196.0" text="Почта" />
+      <Button fx:id="ToLogin" layoutX="679.0" layoutY="534.0" mnemonicParsing="false" onAction="#ToLogin_Pressed" prefHeight="52.0" prefWidth="107.0" text="Логин" textAlignment="CENTER" />
+      <TextField fx:id="LoginField" layoutX="82.0" layoutY="161.0" prefHeight="25.0" prefWidth="306.0" />
+      <TextField fx:id="AddressField" layoutX="226.0" layoutY="265.0" prefHeight="25.0" prefWidth="341.0" />
+   </children>
+</AnchorPane>

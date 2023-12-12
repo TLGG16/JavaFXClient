@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Products.Update">
+   <children>
+      <Label layoutX="902.0" layoutY="14.0" text="Введите информацию">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDField" layoutX="905.0" layoutY="62.0" prefHeight="27.0" prefWidth="150.0" />
+      <Button fx:id="Updatebtn" layoutX="922.0" layoutY="377.0" mnemonicParsing="false" onAction="#Update_Pressed" prefHeight="48.0" prefWidth="117.0" text="Изменить" textAlignment="CENTER" />
+      <TableView fx:id="infTable" layoutX="24.0" layoutY="32.0" prefHeight="456.0" prefWidth="852.0">
+         <columns>
+            <TableColumn fx:id="IDCollumn" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="NameCollumn" prefWidth="148.0" text="Name" />
+            <TableColumn fx:id="CategoryCollumn" prefWidth="184.0" text="Category" />
+            <TableColumn fx:id="DescriptionCollumn" prefWidth="191.0" text="Description" />
+            <TableColumn fx:id="PriceCollumn" prefWidth="121.0" text="Price" />
+            <TableColumn fx:id="AmountCollumn" prefWidth="118.0" text="Amount" />
+         </columns>
+      </TableView>
+      <Button fx:id="Backbtn" layoutX="24.0" layoutY="548.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+      <TextField fx:id="NameField" layoutX="906.0" layoutY="119.0" />
+      <Label layoutX="905.0" layoutY="103.0" text="Название" />
+      <TextField fx:id="CategoryField" layoutX="905.0" layoutY="172.0" />
+      <Label layoutX="905.0" layoutY="155.0" text="Категория" />
+      <TextField fx:id="DescriptionField" layoutX="905.0" layoutY="225.0" />
+      <Label layoutX="905.0" layoutY="208.0" text="Описание" />
+      <Label layoutX="905.0" layoutY="45.0" text="ID" />
+      <TextField fx:id="PriceField" layoutX="906.0" layoutY="277.0" />
+      <Label layoutX="906.0" layoutY="260.0" text="Цена" />
+      <TextField fx:id="AmountField" layoutX="906.0" layoutY="330.0" />
+      <Label layoutX="906.0" layoutY="313.0" text="Количество" />
+   </children>
+</AnchorPane>

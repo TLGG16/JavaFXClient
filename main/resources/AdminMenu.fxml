@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Menu">
+   <children>
+      <Label layoutX="304.0" layoutY="25.0" text="Меню администратора">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="AccountMenubtn" layoutX="325.0" layoutY="210.0" mnemonicParsing="false" onAction="#AccountMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с учетными&#10;записями" textAlignment="CENTER" />
+      <Button fx:id="ProductMenubtn" layoutX="325.0" layoutY="57.0" mnemonicParsing="false" onAction="#ProductMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с &#10;товарами" textAlignment="CENTER" />
+      <Button fx:id="OrderMenubtn" disable="true" layoutX="325.0" layoutY="441.0" mnemonicParsing="false" onAction="#OrderMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с &#10;заказами" textAlignment="CENTER" />
+      <Button fx:id="ReportMenubtn" layoutX="325.0" layoutY="291.0" mnemonicParsing="false" onAction="#ReportMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с &#10;отчетами" textAlignment="CENTER" />
+      <Button fx:id="ReviewMenubtn" disable="true" layoutX="325.0" layoutY="372.0" mnemonicParsing="false" onAction="#ReviewMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с &#10;отзывами" textAlignment="CENTER" />
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+      <Button fx:id="SupplierMenubtn" layoutX="325.0" layoutY="133.0" mnemonicParsing="false" onAction="#SupplierMenu_Pressed" prefHeight="60.0" prefWidth="150.0" text="Работа с &#10;поставщиками" textAlignment="CENTER" />
+
+   </children>
+</Pane>

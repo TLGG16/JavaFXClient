@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="595.0" prefWidth="1392.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Accountant.ViewOrders">
+   <children>
+      <TableView fx:id="infTable" layoutX="14.0" layoutY="22.0" prefHeight="456.0" prefWidth="757.0">
+         <columns>
+            <TableColumn fx:id="IDCollumn" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="NameCollumn" prefWidth="135.0" text="Name" />
+            <TableColumn fx:id="SupplierNameCollumn" prefWidth="235.0" text="SupplierName" />
+            <TableColumn fx:id="PriceCollumn" prefWidth="142.0" text="Price" />
+            <TableColumn fx:id="SoldAmountCollumn" prefWidth="143.0" text="SoldAmount" />
+         </columns>
+      </TableView>
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+      <PieChart fx:id="ProductChart" layoutX="792.0" layoutY="22.0" title="Количество проданных товаров" />
+   </children>
+</AnchorPane>

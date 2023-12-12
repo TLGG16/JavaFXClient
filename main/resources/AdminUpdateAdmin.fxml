@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Accounts.UpdateAdmin">
+   <children>
+      <Label layoutX="51.0" layoutY="41.0" text="Заполните данные">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameField" layoutX="54.0" layoutY="146.0" />
+      <Label layoutX="54.0" layoutY="129.0" text="Имя" />
+      <TextField fx:id="SurnameField" layoutX="54.0" layoutY="198.0" />
+      <Label layoutX="54.0" layoutY="181.0" text="Фамилия" />
+      <TextField fx:id="LoginField" layoutX="54.0" layoutY="252.0" />
+      <Label layoutX="54.0" layoutY="235.0" text="Логин" />
+      <TextField fx:id="PasswordField" layoutX="54.0" layoutY="306.0" />
+      <Label layoutX="54.0" layoutY="289.0" text="Пароль" />
+      <Button fx:id="Updatebtn" layoutX="89.0" layoutY="357.0" mnemonicParsing="false" onAction="#Update_Pressed" prefHeight="33.0" prefWidth="78.0" text="Изменить" />
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="531.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="55.0" prefWidth="114.0" text="Назад" textAlignment="CENTER" />
+      <TextField fx:id="IDField" layoutX="54.0" layoutY="104.0" />
+      <Label layoutX="54.0" layoutY="87.0" text="ID" />
+      <TableView fx:id="infTable" layoutX="221.0" layoutY="25.0" prefHeight="369.0" prefWidth="534.0">
+         <columns>
+            <TableColumn fx:id="IDCollumn" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="RoleCollumn" prefWidth="112.0" text="Role" />
+            <TableColumn fx:id="NameCollumn" prefWidth="136.0" text="Name" />
+            <TableColumn fx:id="SurnameCollumn" prefWidth="173.0" text="Surname" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

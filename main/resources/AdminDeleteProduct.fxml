@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Products.Delete">
+   <children>
+      <Label layoutX="613.0" layoutY="501.0" text="Введите ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="IDField" layoutX="500.0" layoutY="549.0" prefHeight="27.0" prefWidth="150.0" />
+      <Button fx:id="Deletebtn" layoutX="669.0" layoutY="538.0" mnemonicParsing="false" onAction="#Delete_Pressed" prefHeight="48.0" prefWidth="117.0" text="Удалить" textAlignment="CENTER" />
+      <TableView fx:id="infTable" layoutX="29.0" layoutY="22.0" prefHeight="456.0" prefWidth="757.0">
+         <columns>
+            <TableColumn fx:id="IDCollumn" prefWidth="88.0" text="ID" />
+            <TableColumn fx:id="NameCollumn" prefWidth="112.0" text="Name" />
+            <TableColumn fx:id="CategoryCollumn" prefWidth="163.0" text="Category" />
+            <TableColumn fx:id="PriceCollumn" prefWidth="98.0" text="Price" />
+            <TableColumn fx:id="AmountCollumn" prefWidth="135.0" text="Amount" />
+            <TableColumn fx:id="SupplierNameCollumn" prefWidth="135.0" text="SupplierName" />
+         </columns>
+      </TableView>
+      <Button fx:id="Backbtn" layoutX="29.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

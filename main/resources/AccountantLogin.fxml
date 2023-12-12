@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Accountant.Login">
+   <children>
+      <Label layoutX="276.0" layoutY="50.0" text="Вход под бухгалтером">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="250.0" layoutY="282.0" prefHeight="25.0" prefWidth="306.0" />
+      <TextField fx:id="loginField" layoutX="250.0" layoutY="198.0" prefHeight="25.0" prefWidth="306.0" />
+      <Label layoutX="250.0" layoutY="181.0" text="Логин" />
+      <Label layoutX="250.0" layoutY="265.0" text="Пароль" />
+      <Button fx:id="Enterbtn" layoutX="367.0" layoutY="347.0" mnemonicParsing="false" onAction="#Enterbtn_Pressed" text="Вход">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="534.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="52.0" prefWidth="107.0" text="Назад" textAlignment="CENTER" />
+   </children>
+</AnchorPane>

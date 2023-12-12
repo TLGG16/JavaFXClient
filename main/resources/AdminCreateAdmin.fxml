@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controllers.Admin.Accounts.CreateAdmin">
+   <children>
+      <Label layoutX="323.0" layoutY="50.0" text="Заполните данные">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NameField" layoutX="325.0" layoutY="103.0" />
+      <Label layoutX="325.0" layoutY="86.0" text="Имя" />
+      <TextField fx:id="SurnameField" layoutX="325.0" layoutY="155.0" />
+      <Label layoutX="325.0" layoutY="138.0" text="Фамилия" />
+      <TextField fx:id="LoginField" layoutX="325.0" layoutY="209.0" />
+      <Label layoutX="325.0" layoutY="192.0" text="Логин" />
+      <TextField fx:id="PasswordField" layoutX="325.0" layoutY="263.0" />
+      <Label layoutX="325.0" layoutY="246.0" text="Пароль" />
+      <Button fx:id="Createbtn" layoutX="360.0" layoutY="325.0" mnemonicParsing="false" onAction="#Create_Pressed" prefHeight="33.0" prefWidth="78.0" text="Создать" />
+      <Button fx:id="Backbtn" layoutX="14.0" layoutY="538.0" mnemonicParsing="false" onAction="#Back_Pressed" prefHeight="48.0" prefWidth="117.0" text="Назад" textAlignment="CENTER" />
+   </children>
+</Pane>
